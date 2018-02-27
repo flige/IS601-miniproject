@@ -32,7 +32,7 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <img class="rounded-circle" src="https://assets.marthastewart.com/styles/wmax-300/d23/med104889_1009_hom001_l/med104889_1009_hom001_l_vert.jpg?itok=KurVjTut alt=">Generic placeholder image" width="140" height="140">
+                <img class="rounded-circle" src="https://assets.marthastewart.com/styles/wmax-300/d23/med104889_1009_hom001_l/med104889_1009_hom001_l_vert.jpg?itok=KurVjTut alt="> width="140" height="140">
                 <p>I love cookies</p>
             </div><!-- /.col-lg-4 -->
 
