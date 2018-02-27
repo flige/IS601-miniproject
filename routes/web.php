@@ -12,5 +12,40 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
+});
+
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+
+Route::post('/contact', function () {
+
+    $data = request()->all();
+
+  echo "Email: " .$data['Email'] .'<br>';
+  echo "Message: " . $data['body'];
+});
+Route::get('/login', function () {
+    return view('pages.login');
+});
+
+Route::get('/signup', function () {
+    return view('pages.signup');
+});
+Route::get('/message', function () {
+    return view('pages.message');
+});
+
+Route::post('/message', function () {
+
+    $data = request()->all();
+
+    echo "Message: " .$data['message'];
+
 });
