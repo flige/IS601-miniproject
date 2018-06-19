@@ -47,5 +47,7 @@ Route::get('/viewmessages', function () {
 
 });
 
+Route::get('/logout', function () {
+    return view('pages.logout');
 
-
+});
