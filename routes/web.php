@@ -42,13 +42,8 @@ Route::get('/message', function () {
     return view('pages.message');
 });
 
-Route::post('/message', function () {
-
-    $input = request()->all();
-
-      echo $input['message1'];
-
-
+Route::get('/viewmessages', function () {
+    return view('pages.viewmessages');
 
 });
 
