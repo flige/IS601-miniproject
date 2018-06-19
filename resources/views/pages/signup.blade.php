@@ -3,16 +3,16 @@
 @section('content')
     <body class="text-center">
     <form class="form-horizontal" action='' method="POST">
-        <fieldset>
+
             <div id="legend">
-                <legend class="">Signiup</legend>
+                <legend class="">Please Signup here </legend>
             </div>
             <div class="control-group">
                 <!-- Username -->
                 <label class="control-label"  for="username">Username</label>
                 <div class="controls">
                     <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                    <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+                    <p class="help-block">Choose a username</p>
                 </div>
             </div>
 
@@ -48,7 +48,7 @@
                     <button class="btn btn-success">Signup</button>
                 </div>
             </div>
-        </fieldset>
+
     </form>
     </body>
 @endsection

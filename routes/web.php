@@ -28,8 +28,8 @@ Route::post('/contact', function () {
 
     $data = request()->all();
 
-  echo "Email: " .$data['Email'] .'<br>';
-  echo "Message: " . $data['body'];
+    echo "Email: ".$data['Email'] .'<br>';
+    echo "Message: " . $data['body'];
 });
 Route::get('/login', function () {
     return view('pages.login');
@@ -44,8 +44,13 @@ Route::get('/message', function () {
 
 Route::post('/message', function () {
 
-    $data = request()->all();
+    $input = request()->all();
 
-    echo "Message: " .$data['message'];
+      echo $input['message1'];
+
+
 
 });
+
+
+

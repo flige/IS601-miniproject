@@ -1,20 +1,32 @@
-<table style="width:20%">
+
+
+
+<table>
 
     <tr>
-
-        <th>Message</th>
+       <th>Message</th>
         <th>Click to Delete</th>
-
     </tr>
     <tr>
-        <td> <a class="card-link" href="Hi I am interested in taking a baking class. ">Hi I am interested in taking a baking class</a></td>
-        <td><button type="submit" class="btn btn-primary mb-2">Delete</button></td>
+        <td>
+        <form action="/message" method="post">
+            {{ csrf_field() }}
+            <div class="form-group">
+                <input name="message1" type="body" class="form-control" id="message" value="I am interested in taking a fondant class">
 
-    </tr>
-    <tr>
-        <td><a href ="What are your hours."> What are your hours</a> <a/></td>
+            </div>
+            <button type="submit" value = "button 1" class="btn btn-primary mb-2">Message</button>
+        </form>
+
+        </td>
         <td><button type="submit" class="btn btn-primary mb-2">Delete</button></td>
     </tr>
+
+
+
+
+
+
 
 
 </table>

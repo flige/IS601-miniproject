@@ -3,7 +3,7 @@
 @section('content')
 
 
-
+    <div class="carousel">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -32,12 +32,12 @@
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <img class="rounded-circle" src="https://assets.marthastewart.com/styles/wmax-300/d23/med104889_1009_hom001_l/med104889_1009_hom001_l_vert.jpg?itok=KurVjTut alt="> 
+                <img class="rounded-circle" src="https://assets.marthastewart.com/styles/wmax-300/d23/med104889_1009_hom001_l/med104889_1009_hom001_l_vert.jpg?itok=KurVjTut alt=">
                 <p>I love cookies</p>
             </div><!-- /.col-lg-4 -->
 
         </div><!-- /.row -->
-
+    </div>
 
 @endsection
 

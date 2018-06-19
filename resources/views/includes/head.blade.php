@@ -1,5 +1,6 @@
 <head>
     <!-- Required meta tags -->
+  <div  class ="container">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
@@ -8,4 +9,5 @@
 
     <title>Hello, world!</title>
     <link href="/css/carousel.css" rel="stylesheet">
+    </div>
 </head>
