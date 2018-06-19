@@ -12,7 +12,7 @@
         <form action="/message" method="post">
             {{ csrf_field() }}
             <div class="form-group">
-                <input name="message1" type="body" class="form-control" id="message" value="I am interested in taking a fondant class">
+                <input name="message1" type="body" class="form-control" id="message" value= <a href = "viewmessages.blade.php"Message 1>
 
             </div>
             <button type="submit" value = "button 1" class="btn btn-primary mb-2">Message</button>
