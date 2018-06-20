@@ -1,11 +1,11 @@
 @extends('layouts.default')
 
 @section('content')
-    <div class="card mt-3">
+    <div class="card" style="width:40rem; left: 35%;">
 
         <div class="container">
-            <h1>Contact Information</h1>
-            <p class="lead">Thanks for contacting me.</p></div>
+            <h1>Contact Message</h1>
+           </div>
 
         <div class="card-body">
             <form action="/contact" method="post">

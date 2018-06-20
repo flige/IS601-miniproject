@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-    <body class="text-center">
+    <body class="text-center" style="width:40rem; ">
     <form class="form-signin">
         <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
         <label for="inputEmail" class="sr-only">Email address</label>
@@ -14,7 +14,6 @@
             </label>
         </div>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
     </form>
     </body>
 @endsection
