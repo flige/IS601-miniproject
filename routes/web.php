@@ -11,43 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
-
-Route::get('/about', function () {
-    return view('pages.about');
-});
-
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
-
-Route::post('/contact', function () {
-
-    $data = request()->all();
-
-    echo "Email: ".$data['Email'] .'<br>';
-    echo "Message: " . $data['body'];
-});
-Route::get('/login', function () {
-    return view('pages.login');
-});
-
-Route::get('/signup', function () {
-    return view('pages.signup');
-});
-Route::get('/message', function () {
-    return view('pages.message');
-});
-
-Route::get('/viewmessages', function () {
-    return view('pages.viewmessages');
-
-});
-
-Route::get('/logout', function () {
-    return view('pages.logout');
-
-});
+Route::get('/', 'PagesController@home')->name('home');
+Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/contact', 'PagesController@contact')->name('contact');
+Route::post('/contact', 'PagesController@store')->name('contact.store');
+Route::get('/login', 'PagesController@login')->name('login');
+Route::get('/logout', 'PagesController@logout')->name('logout');
+Route::get('/message', 'PagesController@message')->name('message');
+Route::get('/signup', 'PagesController@signup')->name('signup');
+Route::get('/viewmessages', 'PagesController@viewmessages')->name('viewmessages');
+Route::get('/thanks/{name}', 'PagesController@thanks')->name('thanks');
